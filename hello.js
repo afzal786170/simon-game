@@ -15,8 +15,15 @@ document.addEventListener("keypress", function(){
 
         levelup();
     }
+});
 
-    
+let startBtn = document.getElementById("startBtn");
+startBtn.addEventListener("click", function () {
+  if (!started) {
+    console.log("Game is started with button");
+    started = true;
+    levelup();
+  }
 });
 
 function gameFlash(btn) {
